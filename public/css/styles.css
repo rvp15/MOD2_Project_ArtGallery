@@ -1,0 +1,11 @@
+body{
+    background-color: rgb(226, 229, 228);
+}
+.navbaritems{
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbaritems a{
+    padding: 30px;
+}
