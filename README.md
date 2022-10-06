@@ -21,13 +21,14 @@ Create Register and login page for Admin and customers
 Routes available as Store
 | Method| Path                     | Description          |
 |:------|:---------------          |:--------------------:|
-|GET    |/                         | Home page            |
+|GET    |/arts                     | Home page            |
 |GET    |/arts/collection          | list all items       |
 |POST   |/arts/submitartwork       | to submit a art      |
 |GET    |/arts/about               | About Page           |
 |PUT    |/arts/contact             | Contact Page         |
 |POST   |/arts/:id                 | Show Page            |
-|DELETE |/arts/:id                 | delete  |
+|DELETE |/arts/:id                 | delete               |
+|PUT    |/arts/:id                 |update a art work     |
 
 **To Use code and add your creativity**
 
