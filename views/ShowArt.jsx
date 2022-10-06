@@ -18,18 +18,18 @@ class ShowArt extends React.Component{
                   )}
                        <p>Artist: {aart.artist}</p>
                     <p>Price: ${aart.price}</p>
-                    <p>Count:{aart.count}</p>
+                    <p>Quantity:{aart.count}</p>
                     <p>Description: { aart.description}</p>
                     <div>
                     </div>
                     <div className='show-btn-container'>
-                      <button className='show-btns'><a href={`/arts/${aart._id}/edit`}>Edit</a></button>
+                      <button className='all-btn'><a href={`/arts/${aart._id}/edit`}>Edit</a></button>
 
-                      <form className='show-btns' action={`/arts/${aart._id}?_method=DELETE`} method='POST'>
+                      <form className='all-btn' action={`/arts/${aart._id}?_method=DELETE`} method='POST'>
                         <button className='show-del-btn' value='Delete'>Delete</button>
                       </form>
 
-                      <button className='show-btns'><a href={`/arts/collection`}>Back</a></button>
+                      <button className='all-btn'><a href={`/arts/collection`}>Back</a></button>
                     </div>
                     </div>
             </DefaultLayout>

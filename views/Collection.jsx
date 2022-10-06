@@ -21,12 +21,12 @@ class Index extends React.Component {
                 <br />
                 <div className="belowpiccontainer">
                 {/* <img src={art.imageurl} alt={art.imageurl} className="collection-image"/> */}
-                <a className="title" href={`/arts/${art._id}`}>{art.title}</a> <span className="price">-${art.price}</span> <br />
+                <a className="title" href={`/arts/${art._id}`}>{art.title}</a> <span className="price">${art.price}</span> <br />
                 <span className="size">{art.size}inch</span> <br />
                
 
                 <form action={`/arts/cart/${art._id}`} method='POST'>
-                  <button className="addtocart-btn">
+                  <button className="all-btn">
                     <a >Add to cart</a>
                   </button>
                 </form>

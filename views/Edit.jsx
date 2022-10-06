@@ -34,7 +34,7 @@ class Edit extends React.Component {
                     <label htmlFor="image">Upload new image :</label>
                     <input type="file" name="image" id="image" />
                  
-                    <input className='show-btns' type="submit" value='Update' />
+                    <input className='all-btn' type="submit" value='Update' />
                     </form>
             </div>
       </DefaultLayout>

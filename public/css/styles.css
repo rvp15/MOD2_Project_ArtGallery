@@ -1,6 +1,6 @@
 body{
     
-    background-image: url(background1.jpg);
+    background-image: url(background2.jpg);
    
    }
   .headercont{
@@ -62,16 +62,16 @@ box-shadow: 3px 7px 7px 2px #414040;
     font-weight: bold;
 }
 .title:hover{
-    color: aliceblue;
+    color: rgb(14, 80, 248);
 }
 .belowpiccontainer{
     display: flex;
     flex-direction: column;
    align-items: center;
 }
-.addtocart-btn{
+.all-btn{
     box-shadow:inset 0px 0px 14px -3px #f2fadc;
-	background:linear-gradient(to bottom, #dbe6c4 5%, #9ba892 100%);
+	background:linear-gradient(to bottom, #c0bdbd 5%, #bfc5bb 100%);
 	background-color:#dbe6c4;
 	border-radius:6px;
 	border:1px solid #b2b8ad;
@@ -82,10 +82,12 @@ box-shadow: 3px 7px 7px 2px #414040;
 	font-size:15px;
 	font-weight:bold;
 	padding:6px 20px;
-	text-decoration:none;}
-.addtocart-btn:hover{
+	text-decoration:none;
+    -webkit-box-shadow: 3px 7px 7px 2px #000000; 
+    box-shadow: 3px 7px 7px 2px #414040;}
+.all-btn:hover{
     background:linear-gradient(to bottom, #9ba892 5%, #dbe6c4 100%);
-	background-color:#9ba892;
+	background-color:#8b8c8b;
 }
 /* ///////////Home page//////////////// */
 .homecontainer{
@@ -116,20 +118,7 @@ box-shadow: 3px 7px 7px 2px #414040;
 display: flex;
 
 }
-.show-btns{
-   font-family: arial;
-    padding: 10px 25px;
-    border: none;
-    margin: 10px;
-    border-radius: 10px;
-background: linear-gradient(to top, #eaab5a, #c58b3f);
-box-shadow: 10px 5px 5px 0px rgba(0,0,0,0.75);
--webkit-box-shadow: 10px 5px 5px 0px rgba(0,0,0,0.75);
--moz-box-shadow: 10px 5px 5px 0px rgba(0,0,0,0.75);
-}
-.show-btns:hover{
-    background: linear-gradient(to top, #bd8c20, #ad7e34);
-}
+
 .show-btns a{
     text-decoration: none;
     color: #000000;

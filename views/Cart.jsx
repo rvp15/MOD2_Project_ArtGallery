@@ -14,7 +14,7 @@ class Cart extends React.Component {
               <div className="cart-align" key={item._id}>
                 {item.title}:${item.price}
                 <form action={`/art/cart/delete/${index}`} method="POST">
-                  <button className='show-btns' value="delete">Delete</button>
+                  <button className='all-btn' value="delete">Delete</button>
                 </form>
               </div>
             );
