@@ -25,6 +25,7 @@ class DefaultLayout extends React.Component {
           </nav>
         
           <div>{this.props.children}</div>
+        
         </body>
       </html>
     );
