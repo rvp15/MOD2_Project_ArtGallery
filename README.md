@@ -17,6 +17,17 @@ Mongo DB is used to model the Database
 
 Create Register and login page for Admin and customers
 
+**Routes:**
+Routes available as Store
+| Method| Path           | Description          |
+|:------|:---------------|:--------------------:|
+|GET    |/books          | index of books       |
+|GET    |/books/New      | create new books     |
+|GET    |/books/Show     | Display selected book|
+|DELETE |/books/:id      | Delete selected book |
+|PUT    |/books/:id      | Edit selected book   |
+|POST   |/books/Show     | Display edited book  |
+|GET    |/books/booksList| Show list of books   |
 
 **To Use code and add your creativity**
 
