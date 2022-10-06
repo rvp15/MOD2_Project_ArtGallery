@@ -1,4 +1,4 @@
-##The Project
+**The Project**
 
 The Project is Creating Web site to sell my Handmade art works.
 
