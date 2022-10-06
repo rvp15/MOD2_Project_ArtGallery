@@ -1,6 +1,6 @@
 **The Project**
 
-The Project is Creating Web site to sell my Handmade art works.
+The Project is Creating Web site to sell Handmade art works.
 
 **Technology Used**
 Languages: JavaScript with Node.js and React; CSS3 Database: MongoDB
