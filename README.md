@@ -33,4 +33,3 @@ Routes available as Store
 **To Use code and add your creativity**
 
 Install all dependencies included in package.json
-You will need to create an .env file with your port number and a connection string for MongoDB
