@@ -18,7 +18,7 @@ Mongo DB is used to model the Database
 Create Register and login page for Admin and customers
 
 
-**To Use code and add your creativity **
+**To Use code and add your creativity**
 
 Install all dependencies included in package.json
 You will need to create an .env file with your port number and a connection string for MongoDB
