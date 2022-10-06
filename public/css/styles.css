@@ -9,3 +9,16 @@ body{
 .navbaritems a{
     padding: 30px;
 }
+.collectioncontainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.collection-image {
+    width: 20em;
+    height: 20em;
+}
+.showart-image {
+    width: 25em;
+    height: 25em;
+}

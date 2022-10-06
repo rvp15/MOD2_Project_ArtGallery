@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express()
-
+const multer = require('multer')
 //mongo config function
 const mongoConfig = require('./config')
 require('dotenv').config()
@@ -25,7 +25,7 @@ app.use(methodOverride("_method"))
 const artRoutes = require('./routes/artroute')
 // //Middleware
 app.use('/arts', artRoutes)
-
+// app.use('/static', express.static('public'))
 
 // Connect to DB
 mongoConfig()

@@ -11,9 +11,12 @@ class submitartwork extends React.Component {
           <DefaultLayout title="Home Page" nav="arts">
             <div>
             <h1>Submit Art Work</h1>
-                <form action="/arts/collection" method='POST'>
+                <form action="/arts/collection" method='POST' encType="multipart/form-data">
                 <label htmlFor="title">Title:</label>
                     <input type="text" id='title' name='title'/> <br /> <br />
+
+                    <label htmlFor="size">Size:</label>
+                    <input type="size" id='size' name='size'/> <br /> <br />
 
                     <label htmlFor="price">Price:</label>
                     <input type="text" id='price' name='price'/> <br /> <br />
@@ -26,6 +29,12 @@ class submitartwork extends React.Component {
 
                     <label htmlFor="count">Count:</label>
                     <input type="number" id='count' name='count'/> <br /> <br />
+{/* 
+                    <label htmlFor="imageurl">ImageURL:</label>
+                    <input type="text" name= 'imageurl' id='imageurl' />
+                     */}
+                    <label htmlFor="image">Upload image</label>
+                    <input type="file" name="image" id="image" />
                     
                     <input type="submit" value='Submit' />
                     </form>
