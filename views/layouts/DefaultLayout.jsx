@@ -9,8 +9,9 @@ class DefaultLayout extends React.Component {
           <link rel="stylesheet" href="/css/styles.css" />
         </head>
         <body>
-          <h1 id="header">Fine Arts</h1>
-          <hr />
+          <div className="headercont">
+          <h1 id="header">Fine Wall Arts <span id="headspan">-by The First Piece</span></h1>
+          </div>
           <nav className="navbaritems">
             <a id="homepage" href={`/${this.props.nav}`}>
               Home
@@ -22,7 +23,7 @@ class DefaultLayout extends React.Component {
             <a href={`/${this.props.nav}/submitartwork`}>Submit Art Work</a>
             <a href={`/${this.props.nav}/cart`}>Cart</a>
           </nav>
-          <hr />
+        
           <div>{this.props.children}</div>
         </body>
       </html>

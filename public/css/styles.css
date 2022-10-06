@@ -1,18 +1,50 @@
 body{
-    background-color: rgb(226, 229, 228);
-}
+    
+    background-image: url(background1.jpg);
+   
+   }
+  .headercont{
+    display: flex;
+    justify-content: center;
+  }
+  #header{
+    font-size: 45px;
+  font-family: lucida sans unicode;
+  transition: .5s ease-in-out;
+  }
+  #header:hover{
+    transform: scale(1.5);
+  }
+  #headspan{
+    font-family:gabriola;
+  }
 .navbaritems{
     display: flex;
     justify-content: space-around;
+    border: 2px solid black;
+    -webkit-box-shadow: 3px 7px 11px 2px #000000; 
+box-shadow: 3px 7px 11px 2px #464343;
 }
-
 .navbaritems a{
     padding: 30px;
+    color: black;
+    text-decoration: none;
+    font-size: 35px;
+    font-weight: bold;
+ }
+.navbaritems a:hover{
+    color: antiquewhite;
 }
 .collectioncontainer{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    padding: 45px;
+}
+.eachpic{
+    padding: 20px;
+    -webkit-box-shadow: 3px 7px 7px 2px #000000; 
+box-shadow: 3px 7px 7px 2px #414040;
 }
 .collection-image {
     width: 20em;
@@ -22,3 +54,119 @@ body{
     width: 25em;
     height: 25em;
 }
+.title{
+    color: #000000;
+    font-size: 20px;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+.title:hover{
+    color: aliceblue;
+}
+.belowpiccontainer{
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+}
+.addtocart-btn{
+    box-shadow:inset 0px 0px 14px -3px #f2fadc;
+	background:linear-gradient(to bottom, #dbe6c4 5%, #9ba892 100%);
+	background-color:#dbe6c4;
+	border-radius:6px;
+	border:1px solid #b2b8ad;
+	display:inline-block;
+	cursor:pointer;
+	color:#757d6f;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 20px;
+	text-decoration:none;}
+.addtocart-btn:hover{
+    background:linear-gradient(to bottom, #9ba892 5%, #dbe6c4 100%);
+	background-color:#9ba892;
+}
+/* ///////////Home page//////////////// */
+.homecontainer{
+    padding: 150px;
+    position: absolute;
+    font-size: 40px;
+    font-family:MV Boli;
+    font-weight: bold;
+    margin: 20px;
+    color: rgb(31, 23, 12);
+    transition: .5s ease-in-out;
+    
+}
+.homecontainer:hover{
+    transform: scale(1.2);
+}
+/* ////////////////show page////////////////////////// */
+.showcontainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.showcontainer p{
+    font-size: 20px;
+    margin: 5px;
+}
+.show-btn-container{
+display: flex;
+
+}
+.show-btns{
+   font-family: arial;
+    padding: 10px 25px;
+    border: none;
+    margin: 10px;
+    border-radius: 10px;
+background: linear-gradient(to top, #eaab5a, #c58b3f);
+box-shadow: 10px 5px 5px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 10px 5px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 5px 5px 0px rgba(0,0,0,0.75);
+}
+.show-btns:hover{
+    background: linear-gradient(to top, #bd8c20, #ad7e34);
+}
+.show-btns a{
+    text-decoration: none;
+    color: #000000;
+}
+.show-del-btn{
+border: none;
+background: linear-gradient(to top, #edad4d, #c4923b);
+}
+.show-del-btn:hover{
+    background: linear-gradient(to top, #cfbf46, #c8c3bb);
+}
+/* ////////////////////////edit page///////////// */
+.edit-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 25px;
+
+}
+/* ////////////////////////////////////////////abt page/////// */
+.abt-ctr{
+    padding: 30px;
+    margin: 50px;
+    font-size: 30px;
+}
+.contact-ctn,.cart-item{
+    padding: 20px;
+    margin: 40px;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+}
+/* ///////////////cart/////////////// */
+.cart-align{
+    display: flex;
+    padding: 20px;
+
+}
+

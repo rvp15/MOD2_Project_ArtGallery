@@ -6,15 +6,15 @@ class Cart extends React.Component {
   render() {
     return (
       <DefaultLayout title="Cart" nav="arts">
-        <div>
-          Cart Page
+        <div className="cart-item">
+          Your Cart
           <hr />
           {currentCart.map((item,index) => {
             return (
-              <div key={item._id}>
-                {item.title}:{item.price}
+              <div className="cart-align" key={item._id}>
+                {item.title}:${item.price}
                 <form action={`/art/cart/delete/${index}`} method="POST">
-                  <button value="delete">Delete</button>
+                  <button className='show-btns' value="delete">Delete</button>
                 </form>
               </div>
             );

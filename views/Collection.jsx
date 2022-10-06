@@ -10,7 +10,7 @@ class Index extends React.Component {
         <div className="collectioncontainer">
           {arts.map((art) => {
             return (
-              <div key={art._id}>
+              <div className="eachpic" key={art._id}>
                 {art.image && art.imageFullname && (
                   <img
                     src={`/uploads/images/${art.imageFullname}`}
@@ -19,17 +19,18 @@ class Index extends React.Component {
                   ></img>
                 )}
                 <br />
+                <div className="belowpiccontainer">
                 {/* <img src={art.imageurl} alt={art.imageurl} className="collection-image"/> */}
-                <a href={`/arts/${art._id}`}>{art.title}</a> <br />
-                <span>{art.size}inch</span> <br />
-                <span>${art.price}</span> <br />
+                <a className="title" href={`/arts/${art._id}`}>{art.title}</a> <span className="price">-${art.price}</span> <br />
+                <span className="size">{art.size}inch</span> <br />
+               
 
                 <form action={`/arts/cart/${art._id}`} method='POST'>
-                  <button >
+                  <button className="addtocart-btn">
                     <a >Add to cart</a>
                   </button>
                 </form>
-
+                </div>
               </div>
             );
           })}

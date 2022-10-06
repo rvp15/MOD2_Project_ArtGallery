@@ -9,7 +9,7 @@ class submitartwork extends React.Component {
         // console.log(arts)
         return (
           <DefaultLayout title="Home Page" nav="arts">
-            <div>
+            <div className="edit-container">
             <h1>Submit Art Work</h1>
                 <form action="/arts/collection" method='POST' encType="multipart/form-data">
                 <label htmlFor="title">Title:</label>
@@ -36,7 +36,7 @@ class submitartwork extends React.Component {
                     <label htmlFor="image">Upload image</label>
                     <input type="file" name="image" id="image" />
                     
-                    <input type="submit" value='Submit' />
+                    <input className='show-btns' type="submit" value='Submit' />
                     </form>
             </div>
           </DefaultLayout>

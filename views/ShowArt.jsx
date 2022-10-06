@@ -7,32 +7,31 @@ class ShowArt extends React.Component{
         // console.log(`Show Page ${aart}`)
         return(
             <DefaultLayout title='Art Details' nav='arts'>
-                <div>
+                <div className='showcontainer'>
                     <h1>Details of {aart.title}</h1>
-                     
-                    <p>Artist: {aart.artist}</p>
-                    <p>Price: ${aart.price}</p>
-                    <p>Count:{aart.count}</p>
-                    <p>Description: { aart.description}</p>
-
-                    {aart.image && aart.imageFullname && (
+  {aart.image && aart.imageFullname && (
                     <img
                       src={`/uploads/images/${aart.imageFullname}`}
                       alt={aart.image}
                       className="showart-image"
                     ></img>
                   )}
-                    
+                       <p>Artist: {aart.artist}</p>
+                    <p>Price: ${aart.price}</p>
+                    <p>Count:{aart.count}</p>
+                    <p>Description: { aart.description}</p>
                     <div>
-                      <button><a href={`/arts/${aart._id}/edit`}>Edit</a></button>
+                    </div>
+                    <div className='show-btn-container'>
+                      <button className='show-btns'><a href={`/arts/${aart._id}/edit`}>Edit</a></button>
 
-                      <form action={`/arts/${aart._id}?_method=DELETE`} method='POST'>
-                        <button value='Delete'>Delete</button>
+                      <form className='show-btns' action={`/arts/${aart._id}?_method=DELETE`} method='POST'>
+                        <button className='show-del-btn' value='Delete'>Delete</button>
                       </form>
 
-                      <button><a href={`/arts/collection`}>Back</a></button>
+                      <button className='show-btns'><a href={`/arts/collection`}>Back</a></button>
                     </div>
-                </div>
+                    </div>
             </DefaultLayout>
         )
     }

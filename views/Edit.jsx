@@ -10,7 +10,7 @@ class Edit extends React.Component {
 
     return (
         <DefaultLayout title='Edit Your Details' nav='log'>
-      <div>
+      <div className="edit-container">
             <h1>Edit {editAArt.title}</h1>
                 <form action={`/arts/${editAArt._id}?_method=PUT`} method='POST'>
 
@@ -31,10 +31,10 @@ class Edit extends React.Component {
 
                     {editAArt.image && <><span>Existing image:</span><span>{editAArt.image}</span></>} <br /> <br />
 
-                    <label htmlFor="image">Upload new image</label>
+                    <label htmlFor="image">Upload new image :</label>
                     <input type="file" name="image" id="image" />
                  
-                    <input type="submit" value='Update' />
+                    <input className='show-btns' type="submit" value='Update' />
                     </form>
             </div>
       </DefaultLayout>

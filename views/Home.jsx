@@ -8,8 +8,8 @@ class Home extends React.Component {
     // console.log(arts)
     return (
       <DefaultLayout title="Home Page" nav="arts">
-        <div>
-         Home page
+        <div className="homecontainer">
+        “Great things are done by a series of small things brought together.” – Vincent Van Gogh
         </div>
       </DefaultLayout>
     );
