@@ -23,13 +23,13 @@ class ShowArt extends React.Component{
                     <div>
                     </div>
                     <div className='show-btn-container'>
-                      <button className='all-btn'><a href={`/arts/${aart._id}/edit`}>Edit</a></button>
+                      <button className='all-btn'><a className='btn-link' href={`/arts/${aart._id}/edit`}>Edit</a></button>
 
-                      <form className='all-btn' action={`/arts/${aart._id}?_method=DELETE`} method='POST'>
+                      <form className='all-btn' id='delete-btn' action={`/arts/${aart._id}?_method=DELETE`} method='POST'>
                         <button className='show-del-btn' value='Delete'>Delete</button>
                       </form>
 
-                      <button className='all-btn'><a href={`/arts/collection`}>Back</a></button>
+                      <button className='all-btn'><a className='btn-link' href={`/arts/collection`}>Back</a></button>
                     </div>
                     </div>
             </DefaultLayout>
