@@ -26,7 +26,8 @@ Routes available as Store
 |GET    |/arts/collection          | list all items       |
 |POST   |/arts/submitartwork       | to submit a art      |
 |GET    |/arts/about               | About Page           |
-|PUT    |/arts/contact             | Contact Page         |
+|GET    |/arts/contact             | Contact Page         |
+|GET    |/arts/cart                | Cart Page            |
 |POST   |/arts/:id                 | Show Page            |
 |DELETE |/arts/:id                 | delete               |
 |PUT    |/arts/:id                 |update a art work     |
